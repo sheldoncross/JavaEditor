@@ -7,9 +7,9 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+<Pane fx:id="pane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <MenuBar minWidth="800.0" prefWidth="800.0">
+      <MenuBar fx:id="mainMenu" minWidth="800.0" prefWidth="800.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
@@ -31,7 +31,7 @@
           </Menu>
         </menus>
       </MenuBar>
-      <TextField editable="false" focusTraversable="false" layoutY="580.0" maxHeight="20.0" maxWidth="800.0" minHeight="20.0" minWidth="800.0" prefHeight="20.0" prefWidth="800.0" promptText="Status..." />
-      <TextArea layoutY="29.0" prefHeight="551.0" prefWidth="800.0" />
+      <TextField fx:id="mainText" editable="false" focusTraversable="false" layoutY="580.0" maxHeight="20.0" maxWidth="800.0" minHeight="20.0" minWidth="800.0" prefHeight="20.0" prefWidth="800.0" promptText="Status..." />
+      <TextArea fx:id="statusBar" layoutY="29.0" prefHeight="551.0" prefWidth="800.0" />
    </children>
 </Pane>
